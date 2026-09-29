@@ -2,6 +2,8 @@
 
 This pipeline expands a small set of **measured** textures and grain-size statistics of extruded Mg alloys into a large dataset of DREAM.3D representative volume elements (RVEs). It only interpolates between measurements, so every synthetic state stays in the vicinity of a measured one. For the Acta Materialia paper, 119 measured processing conditions (17 alloy classes) became 105,736 synthetic ODFs and 101,000 RVEs, the training data of the generative model.
 
+📦 **Dataset produced with this pipeline:** 101,000 RVEs, encoded as 300 × 300 PNG orientation maps of 15 alloy classes: [Zenodo record 23036836](https://zenodo.org/records/23036836) (DOI [10.5281/zenodo.23036836](https://doi.org/10.5281/zenodo.23036836), CC BY 4.0; files available on request through Zenodo)
+
 <table>
 <tr>
 <td align="center" width="50%"><img src="docs/figures/pole_figures_oversampling.png" alt="Pole figures of oversampled textures"><br><em>Oversampling. Rows: experimental ODF, the DREAM.3D RVE built from it, and two oversampled ODFs of the same class. Intensity is redistributed within the measured fibre; no new components appear.</em></td>
