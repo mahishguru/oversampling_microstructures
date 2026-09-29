@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oversampling-microstructures"
+version = "1.0.0"
+description = "Physics-aware oversampling of measured textures (GSH/ODF) and grain statistics into DREAM.3D RVEs for extruded Mg alloys"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Mahish K. Guru" }]
+keywords = ["texture", "ODF", "spherical harmonics", "oversampling", "Gaussian copula", "DREAM.3D", "magnesium", "data augmentation"]
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "scikit-learn>=1.3",
+    "imbalanced-learn>=0.11",
+    "matplotlib>=3.7",
+    "pandas>=2.0",
+    "h5py>=3.8",
+    "tqdm>=4.65",
+]
+
+[project.optional-dependencies]
+# DAMASK geometry (.vti) export of the generated RVEs in rve_synthesis/04_generate_rves.py
+damask = ["damask>=3.0.2"]
+
+[project.urls]
+Repository = "https://github.com/mahishguru/oversampling_microstructures"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["odf_pipeline*"]

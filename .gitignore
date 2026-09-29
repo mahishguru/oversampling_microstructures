@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.vscode/
+.idea/
+.DS_Store
+*.asv
+
+# data and outputs (not distributed)
+/data/
+/experiments/
+*.dream3d
+*.xdmf
+*.vti

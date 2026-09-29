@@ -1,0 +1,54 @@
+================================================================================
+ODF HARMONICS OVERSAMPLING PIPELINE - SUMMARY REPORT
+================================================================================
+
+Configuration:
+  PCA Components: 110
+  Target Synthetic Per Class: 7500
+  Expected Per-Class Range: 5000-10000
+  Fallback Target Multiplier: 15x
+  Centroid Distance Threshold: 99th percentile
+  Centroid Distance Scale: 1.3x
+  MC Latent Jitter: 3x per sample
+  MC Latent Sigma: 0.01
+  Scale Multiplier: 1x
+  MixUp Multiplier: 1x
+  Warp Multiplier: 1x
+  Sampler: Hybrid ADASYN + Contextual Adjustment
+  ADASYN k-neighbors: 5
+  ADASYN Candidate Multiplier: 2.0
+  Contextual Alpha: 0.03
+  Context Mode: nearest_other_centroid
+  Classifier Threshold: 0.6
+  Geometric Margin: 1.05
+  Filter Stage 2: geometric_margin
+  Filter Stage 3: centroid_distance
+
+Results Per Class:
+Class                                    Original   Synthetic  Total      SynthTarget  %Target   
+------------------------------------------------------------------------------------------
+AZ31_extruded                            8          7500       7508       7500         100.0     
+AZ31_extruded_heattreated                8          7500       7508       7500         100.0     
+ME21_extruded                            18         7500       7518       7500         100.0     
+Mg-10Gd-0.5Mn_extruded                   4          6585       6589       7500         87.8      
+Mg-10Gd-1Mn_extruded                     4          6281       6285       7500         83.7      
+Mg-10Gd_extruded                         9          7500       7509       7500         100.0     
+Mg-2Gd-0.5Mn_extruded                    4          6009       6013       7500         80.1      
+Mg-2Gd-1Mn_extruded                      4          5964       5968       7500         79.5      
+Mg-2Gd_extruded                          9          7500       7509       7500         100.0     
+Mg-5Gd-0.5Mn_extruded                    4          5825       5829       7500         77.7      
+Mg-5Gd-1Mn_extruded                      4          6072       6076       7500         81.0      
+Mg-5Gd_extruded                          8          7500       7508       7500         100.0     
+Z1_extruded                              9          7500       7509       7500         100.0     
+ZNd10_extruded                           11         7500       7511       7500         100.0     
+ZNd10_extruded_heattreated               2          750        752        7500         10.0      
+ZX10_extruded                            11         7500       7511       7500         100.0     
+ZX10_extruded_heattreated                2          750        752        7500         10.0      
+------------------------------------------------------------------------------------------
+TOTAL                                    119        105736     105855     127500       82.9      
+
+================================================================================
+Output Directories:
+  Synthetic Samples: experiments/interpolation_v2_target_7500/synthetic_samples/
+  Visualizations: experiments/interpolation_v2_target_7500/visualizations/
+  Logs: experiments/interpolation_v2_target_7500/logs/
