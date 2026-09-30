@@ -74,6 +74,21 @@ rve_synthesis/run_pipeline.sh                       # grain-count filter + DREAM
 
 The per-class counts of the paper run are in [`results/interpolation_v2_target_7500/oversampling_report.txt`](results/interpolation_v2_target_7500/oversampling_report.txt).
 
+## Citation
+
+If you use this code, please cite:
+
+```bibtex
+@article{guru2026copilot,
+  title   = {{Co-PiLOT}: Constrained Physics-Informed Latent Optimization for Target-Driven Inverse Design},
+  author  = {Guru, Mahish K. and Nagar, Mayank and Vyas, Ayush and Bohlen, Jan and Aydin, Roland and Ben Khalifa, Noomane},
+  journal = {arXiv preprint arXiv:2609.37875},
+  year    = {2026},
+  doi     = {10.48550/arXiv.2609.37875},
+  url     = {https://arxiv.org/abs/2609.37875}
+}
+```
+
 ## Companion repositories
 
 | Repository | Role |

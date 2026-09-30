@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper listed under preferred-citation."
+title: "oversampling_microstructures: physics-aware oversampling of textures and grain statistics into RVEs"
+type: software
+license: MIT
+repository-code: "https://github.com/mahishguru/oversampling_microstructures"
+authors:
+  - family-names: Guru
+    given-names: Mahish K.
+    affiliation: "Helmholtz-Zentrum Hereon"
+preferred-citation:
+  type: article
+  title: "Co-PiLOT: Constrained Physics-Informed Latent Optimization for Target-Driven Inverse Design"
+  authors:
+    - family-names: Guru
+      given-names: Mahish K.
+    - family-names: Nagar
+      given-names: Mayank
+    - family-names: Vyas
+      given-names: Ayush
+    - family-names: Bohlen
+      given-names: Jan
+    - family-names: Aydin
+      given-names: Roland
+    - family-names: Ben Khalifa
+      given-names: Noomane
+  journal: "arXiv preprint"
+  year: 2026
+  doi: "10.48550/arXiv.2609.37875"
+  url: "https://arxiv.org/abs/2609.37875"
+  identifiers:
+    - type: other
+      value: "arXiv:2609.37875"
